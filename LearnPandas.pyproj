@@ -1,0 +1,56 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>061cf6ae-2139-43dd-9421-4016625ac211</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>PandasSQL.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>LearnPandas</Name>
+    <RootNamespace>LearnPandas</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="correlation.py" />
+    <Compile Include="dfselect.py" />
+    <Compile Include="Encoding.py" />
+    <Compile Include="Important_Methods.py" />
+    <Compile Include="LearnPandas.py" />
+    <Compile Include="DeSerialize.py" />
+    <Compile Include="missingdata.py" />
+    <Compile Include="mydataframes.py" />
+    <Compile Include="new_15_10_2023.py" />
+    <Compile Include="pandasagain.py" />
+    <Compile Include="PandasGraphs.py" />
+    <Compile Include="PandasSQL.py" />
+    <Compile Include="PickleFile.py" />
+    <Compile Include="Python_DF 1.py" />
+    <Compile Include="range.py" />
+    <Compile Include="Serialize.py" />
+    <Compile Include="series.py" />
+    <Compile Include="Stach_Unstack.py" />
+    <Compile Include="temp.py" />
+    <Compile Include="temp1.py" />
+    <Compile Include="tidydata.py" />
+    <Compile Include="Training.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
